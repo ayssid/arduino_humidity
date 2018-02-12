@@ -9,7 +9,7 @@ void setup() {
   Serial.begin(9600);
   delay(500);
   //Serial.println("DHT11 Humidity & temperature Sensor\n\n");
-  delay(1000);
+  //delay(1000);
 }
 
 void loop() {
@@ -19,9 +19,11 @@ void loop() {
   //Serial.print(DHT.humidity);
   //Serial.print(";");
   Serial.print("@");
-  Serial.print(DHT.temperature); 
+  Serial.print(DHT.temperature);
+  Serial.print(";"); 
+  Serial.print(DHT.humidity);
   Serial.print("#");
   //Serial.println("");
   
-  delay(5000);
+  delay(1000);
 }
